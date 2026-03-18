@@ -1,0 +1,375 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-texto: #444;
+    --cor-texto2: #555;
+    --cor-h1: #b10032e0;
+    --cor-azul: #1b233b;
+
+    --overlay-hero: rgba(0, 0, 0, 0.4);
+
+    --fonte-h1: "Beau Rivage", serif;
+    --fonte-intro: "Quintessential", serif;
+    --fonte-h2: "Cormorant Garamond", serif;
+    --fonte-texto: "Poiret One", sans-serif;
+    --fonte-texto2: Arial, Helvetica, sans-serif;
+    --fonte-texto3: "Manjari", sans-serif;
+}
+
+.hero {
+    height: 70vh;
+    background-image: url(imagens/capaboa.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    position: relative;
+
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--overlay-hero);
+}
+
+
+.hero h1 {
+    font-family: var(--fonte-h1);
+    font-size: 6rem;
+    color: var(--cor-h1);
+
+    position: relative;
+}
+
+.hero p{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--fonte-intro);
+    color: var(--cor-azul);
+    font-size: 2rem;
+
+    margin-top: 2rem;
+}
+
+.p-especialidade {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: var(--fonte-h2);
+    color: var(--cor-azul);
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-family: var(--fonte-h2);
+    color: var(--cor-azul);
+    margin-bottom: 2rem;
+
+}
+
+section h3 {
+    padding-bottom: 0.3rem;
+
+    font-size: 2rem;
+    font-family: var(--fonte-h2);
+    color: var(--cor-azul);
+} 
+
+section {
+    padding: 1.5rem 0 7.5rem;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+
+.doces {
+    position: relative;
+}
+
+.pratos {
+    margin-top: -5rem;
+    position: relative;
+}
+
+.parallax {
+    max-width: 6rem;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+
+    pointer-events: none;
+    will-change: transform;
+}
+.pistache {
+    left: -120px;
+    top: 150px;
+}
+
+.noz {
+    left: -110px;
+    top: 680px;
+}
+
+.hortela {
+    left: -120px;
+    top: 150px;
+}
+.tomate {
+    left: -100px;
+    top: 700px;
+}
+.salsinha {
+    left: -180px;
+    top: 1100px;
+}
+
+.item-gastronomia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+
+.item-gastronomia.invertido img {
+    order: 2;
+}
+
+.item-gastronomia.invertido .texto {
+    order: 1;
+}
+
+
+.item-gastronomia img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.item-gastronomia:last-child {
+    margin-bottom: 0;
+}
+
+.texto {
+    font-family: var(--fonte-texto3);
+    font-size: 1.1rem;
+    color: var(--cor-azul);
+}
+
+
+.faixa-destaque {
+    padding: 5rem 0;
+}
+
+.frase {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 0.5rem;
+    
+    font-size: 2rem;
+    color: var(--cor-texto);
+    font-family: var(--fonte-intro);
+}
+
+
+
+.sobre {
+
+    height: 80vh;
+    background-image: url(imagens/img-kibe-assado.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    position: relative;
+
+    padding: 0;
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+
+    font-family: var(--fonte-texto3);
+    font-size: 1.8rem;
+    color: #ddd;
+}
+
+.h2-sobre {
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+    color: #ddd;
+}
+
+.sobre .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.sobre::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: var(--overlay-hero);
+}
+
+.h2-localizacao {
+    display: flex;
+    justify-content: center;
+
+    color: var(--cor-azul);
+    font-family: var(--fonte-intro);
+}
+
+.p-localizacao {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1.5rem;
+
+    color: var(--cor-azul);
+    font-size: 1.2rem;
+    font-family: var(--fonte-texto3);
+}
+
+.iframe {
+    width: 100%;
+    max-height: 400px;
+    border: 2px solid #1b233b;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4); /*valores de sombra: 0 esq/dir 5 cima/baixo 15 desfoque 0 espansão 0.1 cor*/
+    border-radius: 25px;
+}
+.contato {
+    display: flex;
+    
+}
+
+.texto-contato {
+    font-family: var(--fonte-h2);
+    color: #1b233b;
+}
+
+.btn-wpp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.botao-whats {
+    width: 20rem;
+    height: 8rem;
+
+
+}
+
+
+.marquee{
+  opacity:0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+  overflow:hidden;
+  white-space:nowrap;
+  margin-bottom: 1rem;
+} 
+
+.marquee.active{
+  opacity:1;
+  transform: translateY(0);
+}
+
+.marquee-track{
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+  animation-play-state: paused;
+}
+
+.marquee.running .marquee-track {
+    animation-play-state: running;
+}
+
+@keyframes scroll{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-50%);
+  }
+}
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #1b233b;
+    padding-top: 0.5rem;
+
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25rem;
+  height: 3rem;
+
+  box-sizing: border-box;
+
+  border-right: 1px solid #fff;
+}
+
+.icon-insta,
+.icon-wpp {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+}
+
+.texto-rodape {
+    font-family: var(--fonte-h2);
+    font-size: 1.4rem;
+    color: #fff;
+}
