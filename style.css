@@ -224,12 +224,13 @@ section {
     font-size: 1.8rem;
     color: #ddd;
     overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 
 @media (max-width: 768px) {
   .sobre {
-    width: 95%;
+    width: 100%;
   }
 }
 
