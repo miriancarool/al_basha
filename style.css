@@ -188,10 +188,6 @@ section {
 }
 
 
-.faixa-destaque {
-    padding: 5rem 0;
-}
-
 .frase {
     display: flex;
     justify-content: center;
@@ -202,8 +198,6 @@ section {
     color: var(--cor-texto);
     font-family: var(--fonte-intro);
 }
-
-
 
 .sobre {
 
@@ -229,6 +223,14 @@ section {
     font-family: var(--fonte-texto3);
     font-size: 1.8rem;
     color: #ddd;
+    overflow-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+  .sobre {
+    width: 95%;
+  }
 }
 
 .h2-sobre {
