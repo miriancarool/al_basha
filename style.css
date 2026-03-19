@@ -356,7 +356,7 @@ section {
   align-items: center;
   justify-content: center;
 
-  width: 10rem;
+  width: 7rem;
   height: 2rem;
 
   box-sizing: border-box;
@@ -372,6 +372,7 @@ section {
 }
 
 .texto-rodape {
+    width: 12rem;
     font-family: var(--fonte-h2);
     font-size: 1rem;
     color: #fff;
