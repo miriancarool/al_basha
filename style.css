@@ -362,7 +362,7 @@ section {
 }
 
 .icone {
-  width: 7rem;
+  width: 6rem;
   height: 2rem;
 }
 
@@ -382,7 +382,7 @@ section {
 }
 
 .texto-rodape-al {
-    width: 10rem;
+    width: 9rem;
     height: 2rem;
     font-family: var(--fonte-h2);
     font-size: 1rem;

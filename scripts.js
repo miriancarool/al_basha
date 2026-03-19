@@ -49,8 +49,8 @@ elementos.forEach((elemento) => {
 const delay = parseFloat(elemento.dataset.delay) || 0
 const progressoElemento = Math.max(0, progressoLimitado - delay)
 
-const movimentoX = progressoElemento * 1200
-const movimentoY = progressoElemento * 600
+const movimentoX = progressoElemento * 1000
+const movimentoY = progressoElemento * 800
 
 const rotacaoTotal = parseFloat(elemento.dataset.rotate) || 0
 const rotacao = progressoElemento * rotacaoTotal
