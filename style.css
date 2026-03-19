@@ -38,7 +38,7 @@
     position: relative;
 
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .hero::before {
@@ -70,32 +70,36 @@
     font-family: var(--fonte-intro);
     color: var(--cor-azul);
     font-size: 2rem;
+    font-weight: 500;
 
-    margin-top: 2rem;
-}
+    margin-top: -2rem;
+} 
 
 .p-especialidade {
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
-    font-family: var(--fonte-h2);
-    color: var(--cor-azul);
-    margin-bottom: 2rem;
-}
-
-section h2 {
     font-size: 2rem;
-    font-family: var(--fonte-h2);
+    font-weight: 500;
+    font-family: var(--fonte-intro);
+    color: var(--cor-azul);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--fonte-intro);
     color: var(--cor-azul);
     margin-bottom: 2rem;
 
 }
 
-section h3 {
+h3 {
     padding-bottom: 0.3rem;
 
     font-size: 2rem;
-    font-family: var(--fonte-h2);
+    font-weight: normal;
+    font-family: var(--fonte-intro);
     color: var(--cor-azul);
 } 
 
