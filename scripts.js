@@ -39,7 +39,7 @@ const scroll = window.scrollY
 const sectionTop = section.offsetTop
 const sectionHeight = section.offsetHeight
 
-const progresso = (scroll - sectionTop + window.innerHeight * 0.7) / sectionHeight
+const progresso = (scroll - sectionTop + window.innerHeight * 0.7) / (sectionHeight + window.innerHeight)
 const progressoLimitado = Math.max(0, Math.min(progresso, 1))
 
 const elementos = obterElementos(section)
@@ -49,14 +49,16 @@ elementos.forEach((elemento) => {
 const delay = parseFloat(elemento.dataset.delay) || 0
 const progressoElemento = Math.max(0, progressoLimitado - delay)
 
-const distanciaX = parseFloat(elemento.dataset.x) || 700
-const distanciaY = parseFloat(elemento.dataset.y) || 800
+const larguraTela = window.innerWidth
+const alturaTela = window.innerHeight
 
-const movimentoX = progressoElemento * distanciaX
-const movimentoY = progressoElemento * distanciaY
+const distanciaX = (parseFloat(elemento.dataset.x) || 1) * larguraTela
+const distanciaY = (parseFloat(elemento.dataset.y) || 1) * alturaTela
 
-// const movimentoX = progressoElemento * 800
-// const movimentoY = progressoElemento * 800
+const velocidade = parseFloat(elemento.dataset.speed) || 1
+
+const movimentoX = progressoElemento * distanciaX * velocidade
+const movimentoY = progressoElemento * distanciaY * velocidade
 
 const rotacaoTotal = parseFloat(elemento.dataset.rotate) || 0
 const rotacao = progressoElemento * rotacaoTotal

@@ -21,6 +21,10 @@
     --fonte-texto3: "Manjari", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .hero {
     height: 70vh;
     background-image: url(imagens/capaboa.png);
@@ -146,16 +150,16 @@ section {
 }
 
 .hortela {
-    left: -100px;
-    top: 150px;
+    left: -80px;
+    top: 250px;
 }
 .tomate {
     left: -90px;
     top: 700px;
 }
 .salsinha {
-    left: -120px;
-    top: 1200px;
+    left: -80px;
+    top: 1250px;
 }
 
 .item-gastronomia {
