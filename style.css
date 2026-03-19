@@ -221,7 +221,7 @@ section {
     margin-bottom: 2rem;
 
     font-family: var(--fonte-texto3);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #ddd;
     overflow-wrap: break-word;
     box-sizing: border-box;
@@ -235,7 +235,7 @@ section {
 }
 
 .h2-sobre {
-    font-size: 2.6rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
     color: #ddd;
 }
