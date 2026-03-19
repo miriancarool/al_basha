@@ -195,6 +195,16 @@ section {
     color: var(--cor-azul);
 }
 
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem,
+  .texto {
+    grid-column: auto;
+  }
+}
 
 .frase {
     display: flex;
