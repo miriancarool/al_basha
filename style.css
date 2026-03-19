@@ -373,6 +373,6 @@ section {
 
 .texto-rodape {
     font-family: var(--fonte-h2);
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: #fff;
 }
