@@ -356,12 +356,14 @@ section {
   align-items: center;
   justify-content: center;
 
-  width: 7rem;
-  height: 2rem;
-
   box-sizing: border-box;
 
   border-right: 1px solid #fff;
+}
+
+.icone {
+  width: 7rem;
+  height: 2rem;
 }
 
 .icon-insta,
@@ -373,6 +375,7 @@ section {
 
 .texto-rodape {
     width: 12rem;
+    height: 2rem;
     font-family: var(--fonte-h2);
     font-size: 1rem;
     color: #fff;
