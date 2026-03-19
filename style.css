@@ -356,7 +356,7 @@ section {
   align-items: center;
   justify-content: center;
 
-  width: 18rem;
+  width: 14rem;
   height: 3rem;
 
   box-sizing: border-box;
@@ -366,13 +366,13 @@ section {
 
 .icon-insta,
 .icon-wpp {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
     color: #fff;
 }
 
 .texto-rodape {
     font-family: var(--fonte-h2);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
 }
