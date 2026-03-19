@@ -380,3 +380,11 @@ section {
     font-size: 1rem;
     color: #fff;
 }
+
+.texto-rodape-al {
+    width: 10rem;
+    height: 2rem;
+    font-family: var(--fonte-h2);
+    font-size: 1rem;
+    color: #fff;
+}
