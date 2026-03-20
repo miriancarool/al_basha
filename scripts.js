@@ -55,10 +55,16 @@ const alturaTela = window.innerHeight
 const distanciaX = (parseFloat(elemento.dataset.x) || 1) * larguraTela
 const distanciaY = (parseFloat(elemento.dataset.y) || 1) * alturaTela
 
-const velocidade = parseFloat(elemento.dataset.speed) || 1
+const isMobile = window.innerWidth <= 768
 
-const movimentoX = progressoElemento * distanciaX * velocidade
-const movimentoY = progressoElemento * distanciaY * velocidade
+const speed = isMobile
+  ? parseFloat(elemento.dataset.speedMobile)
+  : parseFloat(elemento.dataset.speed)
+
+const speedFinal = speed || 1
+
+const movimentoX = progressoElemento * distanciaX * speedFinal
+const movimentoY = progressoElemento * distanciaY * speedFinal
 
 const rotacaoTotal = parseFloat(elemento.dataset.rotate) || 0
 const rotacao = progressoElemento * rotacaoTotal
