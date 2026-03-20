@@ -42,7 +42,6 @@ body {
     position: relative;
 
     padding: 0;
-    margin-bottom: 1rem;
 }
 
 .hero::before {
@@ -70,13 +69,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     font-family: var(--fonte-intro);
     color: var(--cor-azul);
     font-size: 2rem;
     font-weight: 500;
 
-    margin-top: -2rem;
+    margin-top: -3.5rem;
 } 
 
 .p-especialidade {
@@ -171,13 +171,24 @@ section {
 }
 
 
-.item-gastronomia.invertido img {
-    order: 2;
+.item-gastronomia.invertido {
+  direction: rtl;
+}
+
+.item-gastronomia.invertido .texto,
+.item-gastronomia.invertido .imagem {
+  direction: ltr;
+}
+
+/* .item-gastronomia.invertido img {
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .item-gastronomia.invertido .texto {
-    order: 1;
-}
+    grid-column: 1;
+    grid-row: 1;
+} */
 
 
 .item-gastronomia img {
@@ -196,7 +207,8 @@ section {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .item-gastronomia,
+  .invertido {
     grid-template-columns: 1fr;
   }
 
