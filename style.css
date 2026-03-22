@@ -26,7 +26,7 @@ body {
 }
 
 .hero {
-    height: 70vh;
+    height: 65vh;
     background-image: url(imagens/capaboa.png);
 
     background-size: cover;
