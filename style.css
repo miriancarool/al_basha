@@ -26,7 +26,7 @@ body {
 }
 
 .hero {
-    height: 65vh;
+    height: 60vh;
     background-image: url(imagens/capaboa.png);
 
     background-size: cover;
@@ -42,7 +42,7 @@ body {
     position: relative;
 
     padding: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero::before {
@@ -80,7 +80,7 @@ svg {
 
     font-family: var(--fonte-intro);
     color: var(--cor-azul);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 
     padding: 0 1rem;
