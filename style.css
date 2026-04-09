@@ -9,6 +9,7 @@
     --cor-texto: #444;
     --cor-texto2: #555;
     --cor-h1: #b10032e0;
+    --cor-destaque: #bbb7af;
     --cor-azul: #1b233b;
 
     --overlay-hero: rgba(0, 0, 0, 0.4);
@@ -27,7 +28,7 @@ body {
 
 .hero {
     height: 60vh;
-    background-image: url(imagens/capaboa.png);
+    background-image: url(imagens/capa-nova.jpg);
 
     background-size: cover;
     background-position: center;
@@ -56,7 +57,7 @@ body {
 .hero h1 {
     font-family: var(--fonte-h1);
     font-size: 6rem;
-    color: var(--cor-h1);
+    color: var(--cor-destaque);
 
     position: relative;
 }
@@ -164,10 +165,6 @@ section {
     left: -5.5rem;
     top: 43.5rem;
 }
-.salsinha {
-    left: -5rem;
-    top: 85rem;
-}
 
 .item-gastronomia {
     display: grid;
@@ -229,7 +226,7 @@ section {
 .sobre {
 
     height: 80vh;
-    background-image: url(imagens/img-kibe-assado.png);
+    background-image: url(imagens/foto-sobre.jpg);
 
     background-size: cover;
     background-position: center;
@@ -409,7 +406,7 @@ section {
 }
 
 .texto-rodape-al {
-    width: 9rem;
+    width: 12rem;
     height: 2rem;
     font-family: var(--fonte-h2);
     font-size: 1rem;
